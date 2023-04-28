@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myMp3</title>
+    <link rel="myMp3styleSheet" href="myMp3styleSheet.css">
+</head>
+<body>
+
+    <nav class="searchBar">
+        <input type="text" placeholder="Search...">
+    </nav>
+    <br>
+    <br>
+
+
+    <div class="header" align="center">
+     <h1> myMp3 </h1>
+     <p>Sample for mp3 download</p>
+    </div>
+    <br>
+    <div align="center">
+        <h1>KARVAAN SONGS</h1>
+        <img src="./images/Karvaan.jpg" width="300">
+        <h3>karvaan myMp3 download</h3>
+    </div>
+    <br>
+    <p class="details" align="left">
+        Movie name - <b>Karvaan</b> <br>
+        Cast- Irfan khan, Dulquer Salmaan, Mithila Palkar
+    </p> <br>
+    
+    <div class="files">
+      <ol> 
+         <li value="01" onclick="download" id="download"><a href="https://samplemymp3.s3.us-east-2.amazonaws.com/karvaan/01+Chota+Sa+Fasana+-+Karwaan.mp3" target="_blank">Chota sa fasaana</a></li>
+     </ol>
+    </div>
+
+
+    <script>
+        let downL = document.querySelector("download");
+        downL.addEventListener('click', showMsg);
+
+        function showMsg(){
+            alert("Click on download in menu");
+        }
+    </script>
+</body>
+</html>
